@@ -26,6 +26,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+ 
 </head>
 <body>
     <div id="app">
@@ -51,7 +52,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                          @if (Auth::check())
-                        <li><a href="{{ url('/home') }}">Dashboard</a></li> 
+                        <li><a href="{{ url('/home') }}">Forum</a></li> 
                         @endif
                     </ul>
 
@@ -90,6 +91,9 @@
         @yield('content')
     </div>
 
+<footer class="container-fluid text-center">
+  <p>@Ghazam.alghifari</p>
+</footer>
     <!-- Scripts -->
      <!-- Scripts --><script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
 <script src="{{ asset('js/tether.min.js') }}"></script>
